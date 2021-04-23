@@ -179,3 +179,7 @@ result = cross_validate(lr, X, y)  # defaults to 5-fold CV
 print(result['test_score'])
 
 #Automatic parameter searches
+#https://www.cntofu.com/book/170/docs/2.md 中文文档
+#https://scikit-learn.org/stable/modules/linear_model.html 英文文档
+
+#https://sklearn.apachecn.org/docs/master/2.html 中文文档
