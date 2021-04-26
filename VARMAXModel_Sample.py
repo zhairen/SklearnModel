@@ -9,9 +9,9 @@ dta.index.freq = dta.index.inferred_freq
 endog = dta.loc['1960-04-01':'1978-10-01', ['dln_inv', 'dln_inc', 'dln_consump']]
 
 exog = endog['dln_consump']
-print('dln_inc',endog[['dln_inc']])
-print('exog dln_consump',exog)
-mod = sm.tsa.VARMAX(endog[['dln_inv', 'dln_inc','dln_consump']], order=(2,0), trend='n')#, exog=exog
+print('endog ',endog[['dln_inv', 'dln_inc']])
+print('exog ',endog['dln_consump'])
+mod = sm.tsa.VARMAX(endog[['dln_inv', 'dln_inc']], order=(2,0), trend='c', exog=exog)
 res = mod.fit(maxiter=1000, disp=False)
 print(res.summary())
 
