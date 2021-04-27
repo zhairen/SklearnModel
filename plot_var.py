@@ -1,6 +1,6 @@
 #读取数据
 import pandas as pd
-df = pd.read_csv(r'D:/DATA黄鹤楼系列_2016-2021年_销量数据.csv',engine='python')
+df = pd.read_csv(r'DATA黄鹤楼系列_2016-2021年_销量数据.csv',engine='python')
 #print(df)
 
 #1）导入模块
